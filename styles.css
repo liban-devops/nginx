@@ -1,0 +1,58 @@
+/* Style global 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}*/
+
+/* Style pour le header */
+header {
+    background-color: #5e0808;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Style pour la navigation */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+    overflow: hidden;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #610606;
+}
+
+/* Style pour les sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+/* Style pour le footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}

@@ -1,0 +1,16 @@
+---
+- name: Déployer Nginx dans Kubernetes
+  hosts: localhost
+  tasks:
+    - name: Copier le fichier de déploiement nginx dans le serveur Kubernetes
+      copy:
+        src: /home/liban/ansible/playbooks/nginx-deployment.yml  # Le chemin local vers votre fichier
+        dest: /tmp/nginx-deployment.yml  # Le chemin distant dans le serveur Kubernetes
+
+    - name: Appliquer le fichier de déploiement Nginx dans Kubernetes
+      command: kubectl apply -f /tmp/nginx-deployment.yml
+      register: result
+
+    - name: Vérifier si le déploiement a été appliqué avec succès
+      debug:
+        msg: "{{ result.stdout }}"
